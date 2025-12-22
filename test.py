@@ -41,13 +41,13 @@ with torch.no_grad():
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
     Accuracy = correct / total
-    print('测试样本数目为：' + str(total) + '；正确估计的样本数目为：' + str(correct) + '。')
+    print('The number of test samples is：' + str(total) + '；The correctly estimated sample size is：' + str(correct) + '。')
     print('Accuracy of the network on the %d test samples: %f' % (
         total, Accuracy))
 t2 = time.time()
 
 end = time.time()
-print('使用时间: {:.5f} s'.format(end - start))
+print('Time of use: {:.5f} s'.format(end - start))
 
 
 
